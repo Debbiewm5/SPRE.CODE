@@ -43,7 +43,7 @@ A step by step series of examples that tell you how to get a development env run
 	- The rest of the instructions above are the same.
 
 
-## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE/Dataset.R'
+## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE'
 
 ```
 Examples: In Windows directly downloaded from GitHub
