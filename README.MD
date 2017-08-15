@@ -39,14 +39,14 @@ A step by step series of examples that tell you how to get a development env run
 	- The second plot sheet indicates the session number beyond the change point where the participant becomes clinically stable for the 	  	  	  treatemnt.
 	- The third plot sheet graphs the visual comparison of the Weibull CDF to the point estimations along the Weibull CDF curve for that 	  	  	  participant's data. Above the visual plots are two lines of code, the first is the actual K-S evaluation, Pstat., of the estimated curve. 	  	  This value is then compared to the threshold K-S value for the relative 'n'. In OT, this comparison represents the relative strength of the 	  measure scale to the evaluated data. The K-S measured value should be above the threshold.
 
-	 #### Note the red dot in the R console tab on the left. The plots are rendering. When the red dot disappears, the 3 plots appear on the 	              right.
+	 #### Note the red dot in the R console tab on the left. The plots are rendering. When the red dot disappears, the 3 plots appear on the 	              right. Enlarge the right bottom to full height in RStudio.
 
 * In Mac:
 	- click on Dataset1 for MAC. Right click and choose open with RStudio. The code should open in the script pane (upper left) of RStudio.	
 	- The rest of the instructions above are the same.
 
 
-## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE/Dataset.R'
+## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE'
 
 ```
 Examples: In Windows directly downloaded from GitHub
