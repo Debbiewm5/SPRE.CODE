@@ -24,7 +24,7 @@ A step by step series of examples that tell you how to get a development env run
 
 * GOTO www.github.com/Debbiewm5/SPRE.CODE and download the code files onto your computer.
 * Open the download SPRE.CODE-master to view files.
-* Open the \data folder, then copy and paste the 2 sample files into your Documents folder. Note that FData, the y axis, is given as an order statistic to analyse data in SPRE. Some of the data referenced below is naturally ordered.  If not, the FData column is ordered together with the associated session number in Excel and saved as '.csv'.
+* Open the \data folder, then copy and paste the 2 sample files into your Documents folder. Note that FData, the y axis, is given as an order statistic to analyse data in SPRE. Some of the data referenced below is naturally ordered.  If not, the FData column is ordered together with the asocciated session number in Excel and saved as '.csv'.
 
 * In Windows:
 	- click on Dataset for PC. The code should open in the script pane (upper left) of RStudio.
@@ -34,6 +34,9 @@ A step by step series of examples that tell you how to get a development env run
 	- click on test188 for PC or Mac. The code should open in the script pane (upper left) of RStudio.
 	- Place cursor in the code and click on 'source' on upper right.
 	_ The SPRE code reads the Dataset and runs. The resulting 'change point', health predictions from the change point, the effective clinical 	  	  stability and the K-S threshold comparative values for the predictive curve are printed on the console.
+
+#### Note the red dot in the R console tab on the left. The plots are rendering. When the red dot disappears, the 3 plots appear on the right.
+	
 	- There are 3 pages of plots: 1a) The SPRE residuals from the initial OLS linear regression from the client or patients' data; 1b)The SPRE 	  	  Q-Q plot often useful to compare the pattern of these responses to another set of responses in SPRE; 1c)Finally the predictive curve for 	  	  that participant.
 	- The second plot sheet indicates the session number beyond the change point where the participant becomes clinically stable for the 	  	  	  treatemnt.
 	- The third plot sheet graphs the visual comparison of the Weibull CDF to the point estimations along the Weibull CDF curve for that 	  	  	  participant's data. Above the visual plots are two lines of code, the first is the actual K-S evaluation, Pstat., of the estimated curve. 	  	  This value is then compared to the threshold K-S value for the relative 'n'. In OT, this comparison represents the relative strength of the 	  measure scale to the evaluated data. The K-S measured value should be above the threshold.
@@ -43,7 +46,7 @@ A step by step series of examples that tell you how to get a development env run
 	- The rest of the instructions above are the same.
 
 
-## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE'
+## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE/Dataset.R'
 
 ```
 Examples: In Windows directly downloaded from GitHub
