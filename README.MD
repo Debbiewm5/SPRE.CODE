@@ -1,6 +1,6 @@
 # SPRE.CODE
 
-SPRE is a Semiparanetric Data Estimation model to predict outcomes for single-subject and small group designs where the data must be named: Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel data columns: FData  Session. SPRE predicts residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull prediction using K-S statistic, computations for the highest F statistic, all predictions, and the probability curve for effective clinical stability.
+SPRE is a Semiparanetric Data Estimation model to predict outcomes for single-subject and small group designs where the data must be named: Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel data columns: FData  Session.  SPRE predicts residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull prediction using K-S statistic, computations for the highest F statistic, all predictions, and the probability curve for effective clinical stability.
 
 ```
 Weissman-Miller, D., Shotwell, M.P. & Miller, R.J. (2012).  New single-subject and small-n design in occupational therapy:  Application to weight loss in obesity.  American Journal of Occupational Therapy, 66, 455-462. DOI: http://dx.doi.org/10.5014/ajot.2012.004788
@@ -11,28 +11,30 @@ Weissman-Miller, D. (2013). Novel point estimation from a Semiparametric Ratio E
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for use of SPRE on Occupational Therapy (OT) and Personalized Medicine research.
+These instructions will get you a copy of the project up and running on your local machine for use of SPRE in Occupational Therapy (OT) and Personalized Medicine research.
 
 ### Prerequisites
 
 * Install the R computer language from www.r-project.org on your machine.
-* Install RStudio from www.rstudio,com on your desktop.
+* Install RStudio from www.rstudio.com on your desktop.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+A step by step series of examples that tell you how to get a development env running
 
 * GOTO www.github.com/Debbiewm5/SPRE.CODE and download the code files onto your computer.
 * Open the download SPRE.CODE-master to view files.
-* Opden the \data folder, then copy and paste the 2 sample files into your Documents folder.
+* Open the \data folder, then copy and paste the 2 sample files into your Documents folder. Note that FData, the y axis, is given as an order statistic to analyse data in SPRE. Some of the data referenced below is naturally ordered.  If not, the FData column is ordered together with the associated session number in Excel and saved as '.csv'.
+
 * In Windows:
 	- click on Dataset for PC. The code should open in the script pane (upper left) of RStudio.
+	- Set the RStudo session to the Documents folder or whereever your data is located.
 	- Place cursor in the code and click on 'source' on upper right.
 	- The resulting dataset appears in the R console on the bottom left pane.
 	- click on test188 for PC or Mac. The code should open in the script pane (upper left) of RStudio.
 	- Place cursor in the code and click on 'source' on upper right.
-	_ The SPRE code reads the Dataset and runs. The resulting 'change point', health preditions from the change point, the effective clinical 	  	  stability and the K-S threshold comparative values for the predictive curve are printed on the console.
-	- There are 3 pages of plots: 1a) The SPRE residuals from the initial OLS linear regression from the client or patients' data; 1b)The SPRE 	  	  Q-Q plot often useful to compare the pattern of these responses to anther set of responses in SPRE; 1c)Finally the predictive curve for 	  	  that participant.
+	_ The SPRE code reads the Dataset and runs. The resulting 'change point', health predictions from the change point, the effective clinical 	  	  stability and the K-S threshold comparative values for the predictive curve are printed on the console.
+	- There are 3 pages of plots: 1a) The SPRE residuals from the initial OLS linear regression from the client or patients' data; 1b)The SPRE 	  	  Q-Q plot often useful to compare the pattern of these responses to another set of responses in SPRE; 1c)Finally the predictive curve for 	  	  that participant.
 	- The second plot sheet indicates the session number beyond the change point where the participant becomes clinically stable for the 	  	  	  treatemnt.
 	- The third plot sheet graphs the visual comparison of the Weibull CDF to the point estimations along the Weibull CDF curve for that 	  	  	  participant's data. Above the visual plots are two lines of code, the first is the actual K-S evaluation, Pstat., of the estimated curve. 	  	  This value is then compared to the threshold K-S value for the relative 'n'. In OT, this comparison represents the relative strength of the 	  measure scale to the evaluated data. The K-S measured value should be above the threshold.
 
@@ -41,9 +43,10 @@ A step by step series of examples that tell you have to get a development env ru
 	- The rest of the instructions above are the same.
 
 
+## Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE/Dataset.R'
+
 ```
-Downloaded from 'http://www.github.com/Debbiewm5/SPRE.CODE/Dataset.R'
-Examples: In Windows.
+Examples: In Windows directly downloaded from GitHub
 
 > source('C:/Users/dwmst/AppData/Local/Temp/Temp1_SPRE.CODE-master.zip/SPRE.CODE-master/Dataset.R')
     FData Session
@@ -128,8 +131,8 @@ The first fifteen rows of data from the 'change point' for this participant.
 
 ```
 
-## Add final data plots
-Treatment prognosis and evaluation can be determined from these plots.
+## Add final data plots in RStudio for Windows and Mac
+Treatment prognosis and evaluation can be determined from these plots. 
 Press the arrows under Plots on the right side of RStudio.
 Start with plots 1a), 1b), and 1c).
 
@@ -145,14 +148,9 @@ Additional notes on transforming the data in Excel to analyse in SPRE are given 
 ## Built With
 * R programming language
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-
 ## Versioning
 
-We use [Git](http:www.git.com) for versioning. 
+We use [Git] for versioning. 
 
 ## Authors
 
