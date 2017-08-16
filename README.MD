@@ -139,11 +139,6 @@ Treatment prognosis and evaluation can be determined from these plots.
 Press the arrows under Plots on the right side of RStudio.
 Start with plots 1a), 1b), and 1c).
 
-```
-![](http:www.github.com/Debbiewm5/SPRE.CODE/Rplot1.png?raw=TRUE)
-
-```
-
 ### Add data plot 2:
 Effective clinical stability beyond the 'change point'.  The curveacross the top from left to right is the probability.
 
