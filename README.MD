@@ -140,7 +140,7 @@ Press the arrows under Plots on the right side of RStudio.
 Start with plots 1a), 1b), and 1c).
 
 ```
-![](Rplot1.png?raw=TRUE)
+![](http:www.github.com/Debbiewm5/SPRE.CODE/Rplot1.png?raw=TRUE)
 
 ```
 
