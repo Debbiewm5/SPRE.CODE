@@ -134,7 +134,7 @@ The first fifteen rows of data from the 'change point' for this participant.
 
 ```
 
-## Add final data plots in RStudio for Windows and Mac
+## Add final data plots in RStudio for Windows and Mac _ open Rplots 1,2 and 3.png for preview
 Treatment prognosis and evaluation can be determined from these plots. 
 Press the arrows under Plots on the right side of RStudio.
 Start with plots 1a), 1b), and 1c).
@@ -145,7 +145,7 @@ Effective clinical stability beyond the 'change point'.  The curveacross the top
 ### Add data plot 3:
 SPRE Weibull CDF prediction and K-S data.
 
-## Deployment and gtransforming Excel data
+## Deployment and transforming Excel data
 Additional notes on transforming the data in Excel to analyse in SPRE are given in a GIST.
 
 ## Built With
