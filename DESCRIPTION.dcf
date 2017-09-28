@@ -5,11 +5,11 @@ Version: 0.1.0
 Author: Deborah Weissman-Miller
 Maintainer: dweissman-miller@brenau,edu
 Description: SPRE is a Semiparanetric Data Estimation model to predict outcomes
-    for single-subject and small group designs where the data must be named: 
-    Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel 
+    for single-subject and small group designs where the data must be named:
+    Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel
     data columns: FData  Session. SPRE predicts residuals, normal Q-Q, predictions
     from a change point, effective clinical stability, SPRE Weibull prediction using
-    K-S statistic, computations for the highest F statistic, all predictions, and the
+    comparative plots, computations for the highest F statistic, all predictions, and the
     probability curve for effective clinical stability.
 License: GPL-2
 Encoding: UTF-8
