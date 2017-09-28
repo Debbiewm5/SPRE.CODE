@@ -1,6 +1,6 @@
 # SPRE.CODE
 
-SPRE is a Semiparanetric Data Estimation model to predict outcomes for single-subject and small group designs where the data must be named: Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel data columns: FData  Session.  SPRE predicts residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull prediction using K-S statistic, computations for the highest F statistic, all predictions, and the probability curve for effective clinical stability.
+SPRE is a Semiparanetric Data Estimation model to predict outcomes for single-subject and small group designs where the data must be named: Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel data columns: FData  Session.  SPRE predicts residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull prediction using comparative plots, computations for the highest F statistic, all predictions, and the probability curve for effective clinical stability.
 
 ```
 Weissman-Miller, D., Shotwell, M.P. & Miller, R.J. (2012).  New single-subject and small-n design in occupational therapy:  Application to weight loss in obesity.  American Journal of Occupational Therapy, 66, 455-462. DOI: http://dx.doi.org/10.5014/ajot.2012.004788
@@ -31,9 +31,9 @@ A step by step series of examples that tell you how to get a development env run
 	- Set the RStudo session to the Documents folder or whereever your data is        located.
 	- Place cursor in the code and click on 'source' on upper right.
 	- The resulting dataset appears in the R console on the bottom left pane.
-	- click on test188 for PC or Mac. The code should open in the script pane         (upper left) of RStudio.
+	- click on test190.R for PC or Mac. The code should open in the script pane         (upper left) of RStudio.
 	- Place cursor in the code and click on 'source' on upper right.
-	_ The SPRE code reads the Dataset and runs. The resulting 'change point',         health predictions from the change point, the effective clinical 	  	          stability and the K-S threshold comparative values for the predictive           curve are printed on the console.
+	_ The SPRE code reads the Dataset and runs. The resulting 'change point',         health predictions from the change point, the effective clinical 	  	          stability and the comparative values for the Weibull predictive           curve are printed on the console.
 	
 	- There are 3 pages of plots: 1a) The SPRE residuals from the initial OLS         linear regression from the client or patients' data; 1b)The SPRE 	  	  Q       -Q plot often useful to compare the pattern of these responses to another       set of responses in SPRE; 1c)Finally the predictive curve for 	  	          that participant.
 	- The second plot sheet indicates the session number beyond the change point       where the participant becomes clinically stable for the 	  	  	               treatment.
