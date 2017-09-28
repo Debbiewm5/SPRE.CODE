@@ -37,6 +37,7 @@ library(logspline)
 #' @param FData A numeric vector
 #' @param Session A numeric vector
 #' @return beta coefficient A number
+#' @export
 
     linearDist <- function(lm) {
     lm(Dataset$FData~Dataset$Session)
@@ -54,6 +55,7 @@ library(logspline)
 #' @param FData A numeric vector
 #' @param Session A numeric vector
 #' @return fDist[i,]
+#' @export
 
     fDist <- matrix (
         data=NA,
@@ -86,6 +88,7 @@ cat(" \n ")
 #' @param qn A number
 #' @param pv A number
 #' @return computations
+#' @export
 
         tester <- apply(fDist, FUN=which.max,2)
                 y <- tester[2]
@@ -168,6 +171,7 @@ cat("\n", "\n")
 #' @param Y A numeric vector
 #' @param S A numeric vector
 #' @return plots
+#' @export
 
                 myPlots <- function (data,d) {
                         data <-list('Pred',header=TRUE)
@@ -304,7 +308,8 @@ cat("\n", "\n")
 #' @param fitdist A function
 #' @param z A numeric vector
 #' @return plot comparisons
-
+#' @export
+                z = sort(Pred[-1])
                 fit.weibull <- fitdist(z, "weibull", lower = c(0, 0))
 
         plot(fit.weibull, cex.main = 0.8)
