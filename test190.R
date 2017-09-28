@@ -293,7 +293,7 @@ cat("Clinical stability is determined from the probability curve for SPRE predic
 cat("\n","\n")
 cat("First six predicted probability values","\n")
 
-        m4 <- print(pweibull(x, shape=k, scale = sL, lower.tail = TRUE, log.p =               FALSE)[1:6])
+        m4 <- print(pweibull(x, shape=k, scale = sL, lower.tail = TRUE, log.p               =FALSE)[1:6])
                 b <- abline(v=0, col="blue", lty=3)
                 g <-if (dup2[[2]] <- 0) then (dup2[[2]] <- 1:1)
                         rm(b,g)
