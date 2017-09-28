@@ -37,7 +37,6 @@ library(logspline)
 #' @param FData A numeric vector
 #' @param Session A numeric vector
 #' @return beta coefficient A number
-#' @export
 
     linearDist <- function(lm) {
     lm(Dataset$FData~Dataset$Session)
@@ -55,7 +54,6 @@ library(logspline)
 #' @param FData A numeric vector
 #' @param Session A numeric vector
 #' @return fDist[i,]
-#' @export
 
     fDist <- matrix (
         data=NA,
@@ -88,7 +86,6 @@ cat(" \n ")
 #' @param qn A number
 #' @param pv A number
 #' @return computations
-#' @export
 
         tester <- apply(fDist, FUN=which.max,2)
                 y <- tester[2]
@@ -171,7 +168,6 @@ cat("\n", "\n")
 #' @param Y A numeric vector
 #' @param S A numeric vector
 #' @return plots
-#' @export
 
                 myPlots <- function (data,d) {
                         data <-list('Pred',header=TRUE)
@@ -301,6 +297,12 @@ cat("First six predicted probability values","\n")
                 b <- abline(v=0, col="blue", lty=3)
                 g <-if (dup2[[2]] <- 0) then (dup2[[2]] <- 1:1)
                         rm(b,g)
+                        
+                m3 <- readRDS("dup2.rds")
+                c <- 1
+                a <- abline(v=m3, col="red", lty=2, lwd=1.5)
+                y <- if (c==1) a else b
+                
 cat("\n", "\n")
 
 #' @name fit.weibull
@@ -308,7 +310,7 @@ cat("\n", "\n")
 #' @param fitdist A function
 #' @param z A numeric vector
 #' @return plot comparisons
-#' @export
+                    
                 z = sort(Pred[-1])
                 fit.weibull <- fitdist(z, "weibull", lower = c(0, 0))
 
