@@ -27,22 +27,22 @@ A step by step series of examples that tell you how to get a development env run
 * Open the \data folder, then copy and paste the 2 sample files into your Documents folder. Note that FData, the y axis, is given as an order statistic to analyse data in SPRE. Some of the data referenced below is naturally ordered.  If not, the FData column is ordered together with the asocciated session number in Excel and saved as '.csv'.
 
 * In Windows:
-	- click on Dataset for PC. The code should open in the script pane (upper left) of RStudio.
-	- Set the RStudo session to the Documents folder or whereever your data is located.
+	- click on Dataset for PC. The code should open in the script pane (upper         left) of RStudio.
+	- Set the RStudo session to the Documents folder or whereever your data is        located.
 	- Place cursor in the code and click on 'source' on upper right.
 	- The resulting dataset appears in the R console on the bottom left pane.
-	- click on test188 for PC or Mac. The code should open in the script pane (upper left) of RStudio.
+	- click on test188 for PC or Mac. The code should open in the script pane         (upper left) of RStudio.
 	- Place cursor in the code and click on 'source' on upper right.
-	_ The SPRE code reads the Dataset and runs. The resulting 'change point', health predictions from the change point, the effective clinical 	  	  stability and the K-S threshold comparative values for the predictive curve are printed on the console.
+	_ The SPRE code reads the Dataset and runs. The resulting 'change point',         health predictions from the change point, the effective clinical 	  	          stability and the K-S threshold comparative values for the predictive           curve are printed on the console.
 	
-	- There are 3 pages of plots: 1a) The SPRE residuals from the initial OLS linear regression from the client or patients' data; 1b)The SPRE 	  	  Q-Q plot often useful to compare the pattern of these responses to another set of responses in SPRE; 1c)Finally the predictive curve for 	  	  that participant.
-	- The second plot sheet indicates the session number beyond the change point where the participant becomes clinically stable for the 	  	  	  treatemnt.
-	- The third plot sheet graphs the visual comparison of the Weibull CDF to the point estimations along the Weibull CDF curve for that 	  	  	  participant's data. Above the visual plots are two lines of code, the first is the actual K-S evaluation, Pstat., of the estimated curve. 	  	  This value is then compared to the threshold K-S value for the relative 'n'. In OT, this comparison represents the relative strength of the 	  measure scale to the evaluated data. The K-S measured value should be above the threshold.
+	- There are 3 pages of plots: 1a) The SPRE residuals from the initial OLS         linear regression from the client or patients' data; 1b)The SPRE 	  	  Q       -Q plot often useful to compare the pattern of these responses to another       set of responses in SPRE; 1c)Finally the predictive curve for 	  	          that participant.
+	- The second plot sheet indicates the session number beyond the change point       where the participant becomes clinically stable for the 	  	  	               treatment.
+	- The third plot sheet graphs the visual comparison of the Weibull distribut       ion to the point estimations along the Weibull CDF curve for that 	  	  	  participant's data. The empirical and theoretical CDF's are plotted in the       lower left hand graph. The probability for these plots is given in the          title.
 
-	 #### Note the red dot in the R console tab on the left. The plots are rendering. When the red dot disappears, the 3 plots appear on the 	              right. Enlarge the right bottom to full height in RStudio.
+	 #### Note the plots are rendering when the 3 plots appear on the 	             right of the Rstudio desktop. Enlarge the right bottom to full height in        RStudio at the start of the analysis.
 
 * In Mac:
-	- click on Dataset1 for MAC. Right click and choose open with RStudio. The code should open in the script pane (upper left) of RStudio.	
+	- click on Dataset1 for MAC. Right click and choose open with RStudio. The        code should open in the script pane (upper left) of RStudio.	
 	- The rest of the instructions above are the same.
 
 
@@ -143,10 +143,10 @@ Start with plots 1a), 1b), and 1c).
 Effective clinical stability beyond the 'change point'.  The curveacross the top from left to right is the probability.
 
 ### Add data plot 3:
-SPRE Weibull CDF prediction and K-S data.
+SPRE Weibull prediction comparison with probobility.
 
 ## Deployment and transforming Excel data
-Additional notes on transforming the data in Excel to analyse in SPRE are given in a GIST.
+Additional notes on transforming the data in Excel to analyse in SPRE are given in a Github Wiki.
 
 ## Built With
 * R programming language
@@ -182,4 +182,3 @@ Weissman-Miller, D. and Graham, K. 2015. Novel scale development for fear of fal
 Weissman-Miller, D., Graham, K. C. (2014).  Novel Scale Development for Fear of Falling and Falls: Analysed using a Semiparametric Ratio Estimator (SPRE). In the Joint Statistical Meeting (JSM) Proceedings, Non-Parametric Section.  Boston, MA: American Statistical Association (2014). 
 
 ```
-
