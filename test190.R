@@ -1,10 +1,10 @@
 #' @title SPRE: A Semiparametric Data Estimation model to predict outcomes for single-subject and small group designs
 #'
-#' @description SPRE is a Semiparanetric Data Estimation model to predict outcomes for single-subject and small group designs where the data must be named: Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel data columns: FData  Session. SPRE predicts residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull prediction using K-S statistic, computations for the highest F statistic, all predictions, and the probability curve for effective clinical stability.
+#' @description SPRE is a Semiparanetric Data Estimation model to predict outcomes for single-subject and small group designs where the data must be named: Dataset <- read.csv("~/Documents/NameOfYourFile.csv"). There are 2 Excel data columns: FData  Session. SPRE predicts residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull probability statistic, computations for the highest F statistic, all predictions, and the probability curve for effective clinical stability.
 #'
 #' @param FData A numberic vector
 #' @param Session A numberic vector
-#' @return  residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull prediction using K-S statistic, empirical and theoretical coparisons of the Weibull CDF to the point estimations along a  Weibull CDF. Computations for the highest F statistic, all predictions, the probability curve for effective clinical stability and the K-S statistic under  the null to determine sufficient scale of the data measure.
+#' @return  residuals, normal Q-Q, predictions from a change point, effective clinical stability, SPRE Weibull probability. Computations for the highest F statistic, all predictions, the probability curve for effective clinical stability and the K-S statistic under  the null to determine sufficient scale of the data measure.
 #'
 #' @example Dataset <- read.csv("~/Documents/HEAT_LILLY_Heat.Stat.14_2016.csv") #' FData 4.8462,4.6429,4.625,4.4375,4.3792,4.375,4.1765,4.1429,4.1333,4.0667,4,4,3.9375,3.875   #' Session 4,3,14,11,13,6,10,8,12,2,1,5,7,9
 #'
