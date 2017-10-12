@@ -13,9 +13,8 @@ library(readr)
 library(dplyr)
 library(MASS)
 library(fitdistrplus)
-library(logspline)
 
-    list.of.packages <- c("readr", "dplyr", "MASS","fitdistrplus","logspline")
+    list.of.packages <- c("readr", "dplyr", "MASS","fitdistrplus")
     new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
         if(length(new.packages)) install.packages(new.packages)
         lapply(new.packages, require, character.only=T)
