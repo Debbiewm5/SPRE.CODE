@@ -1,6 +1,6 @@
 Dataset1 <- function() {
 
-    Dataset <<- read.csv("~/Documents/HEAT_LILLY_Heat.Stat.14_2016 2.csv")
+    Dataset <<- read.csv("~/Documents/HEAT_LILLY_Heat.Stat.14_2016.csv")
 
     return(list(Dataset))
 }
